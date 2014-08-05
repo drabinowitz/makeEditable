@@ -4,11 +4,15 @@ app.directive('makeEditable', function() {
 
 		restrict : 'A',
 
-		templateUrl : './makeEditable.html',
+		templateUrl : './makeEditable/makeEditable.html',
+
+		transclude : true,
 
 		scope : true,
 
 		link : function($scope, element, attrs) {
+
+			$scope.button = {};
 
 			$scope.button.text = 'Edit';
 
