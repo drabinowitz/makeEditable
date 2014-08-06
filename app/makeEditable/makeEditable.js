@@ -12,17 +12,31 @@ app.directive('makeEditable', function() {
 
 		link : function($scope, element, attrs) {
 
-			$scope.button = {};
+			$scope.editable = false;
 
-			$scope.button.text = 'Edit';
+			$scope.button = {
 
-			$scope.button.toggleEdit = function(){
+				text : function(){
 
-				console.log('derp')
+					if ($scope.editable){
+
+						return 'Save';
+
+					} else {
+
+						return 'Edit';
+
+					}
+
+				},
+
+				toggleEdit : function(){
+
+					$scope.editable = !$scope.editable;
+
+				}
 
 			};
-
-			debugger;
 
 		}
 

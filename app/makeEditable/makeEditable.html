@@ -1,3 +1,7 @@
-<button ng-click="button.toggleEdit()">{{ button.text }}</button>
+<div class="editWrapper">
 
-<div ng-transclude></div>
+	<button ng-click="button.toggleEdit()">{{ button.text() }}</button>
+
+	<div ng-transclude ng-class="{editing : editable}" contenteditable="{{ editable }}"></div>
+
+</div>

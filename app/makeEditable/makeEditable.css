@@ -3,3 +3,24 @@
 	color : red;
 
 }
+
+.editWrapper {
+
+	border: 1px solid black;
+	margin: 50px;
+	padding: 5px;
+
+}
+
+.editWrapper button {
+
+	float: right;
+
+}
+
+.editWrapper div {
+
+	clear: both;
+	margin-left: 10px;
+
+}
