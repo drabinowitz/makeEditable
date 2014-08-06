@@ -4,7 +4,7 @@ app.directive('makeEditable', function() {
 
 		restrict : 'A',
 
-		templateUrl : './makeEditable/makeEditable.html',
+		templateUrl : 'makeEditable/makeEditable.html',
 
 		transclude : true,
 
